@@ -1,16 +1,16 @@
 {
-  "name": "spa-github-pages",
-  "version": "3.0.0",
-  "description": "Single Page Apps for GitHub Pages",
+  "name": "tipsegwit.github.io",
+  "version": "0.0.1",
+  "description": "Tip miners signaling for segwit",
   "scripts": {
     "start": "webpack-dev-server -d --inline --host 0.0.0.0 --history-api-fallback --progress"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rafrex/spa-github-pages.git"
+    "url": "git+https://github.com/tipsegwit/tipsegwit.github.io.git"
   },
-  "author": "Rafael Pedicini <code@rafrex.com>",
-  "license": "MIT",
+  "author": "TipSegWit Developers <tipsegwit@protonmail.com>",
+  "license": "WTFPL",
   "dependencies": {
     "react": "^15.4.1",
     "react-dom": "^15.4.1",
