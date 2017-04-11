@@ -3,7 +3,8 @@
   "version": "0.0.1",
   "description": "Tip miners signaling for segwit",
   "scripts": {
-    "start": "webpack-dev-server -d --inline --host 0.0.0.0 --history-api-fallback --progress"
+    "start": "webpack-dev-server -d --inline --host 0.0.0.0 --history-api-fallback --progress",
+    "lint": "eslint ."
   },
   "repository": {
     "type": "git",
