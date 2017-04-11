@@ -1,7 +1,7 @@
 import React from 'react'
-import s from '../styles/home.style'
+import s from '../styles/about.style'
 
-const Home = () => {
+const About = () => {
   return (
     <div>
       <p style={s.p}>
@@ -13,4 +13,4 @@ const Home = () => {
   )
 }
 
-export default Home
+export default About

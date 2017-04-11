@@ -1,6 +1,6 @@
-import style from './style';
+import style from './style'
 
-const s = Object.create(style);
+const s = Object.create(style)
 
 s.root = {
   fontFamily: 'helvetica neue, helvetica, sans-serif',
@@ -28,26 +28,26 @@ s.root = {
   WebkitTextSizeAdjust: 'none',
   MozTextSizeAdjust: 'none',
   msTextSizeAdjust: 'none',
-  textSizeAdjust: 'none',
-};
+  textSizeAdjust: 'none'
+}
 
 s.title = {
   fontSize: '20px',
-  marginBottom: '0.5vh',
-};
+  marginBottom: '0.5vh'
+}
 
 s.repoLink = {
-  fontSize: '14px',
-};
+  fontSize: '14px'
+}
 
 s.mapMenu = {
-  margin: '3vh 0',
-};
+  margin: '3vh 0'
+}
 
 s.creditLine = {
   color: '#A0A0A0',
   fontSize: '14px',
-  marginTop: '50px',
-};
+  marginTop: '50px'
+}
 
-export default s;
+export default s

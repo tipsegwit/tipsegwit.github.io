@@ -1,5 +1,5 @@
-import style from './style';
+import style from './style'
 
-const s = Object.create(style);
+const s = Object.create(style)
 
-export default s;
+export default s

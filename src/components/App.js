@@ -1,23 +1,22 @@
-import React, { PropTypes } from 'react';
-import Interactive from 'react-interactive';
-import { Link } from 'react-router';
-import s from '../styles/app.style';
+import React, { PropTypes } from 'react'
+import { Link } from 'react-router'
+import s from '../styles/app.style'
 
 const propTypes = {
   children: PropTypes.element.isRequired,
-  routes: PropTypes.array.isRequired,
-};
+  routes: PropTypes.array.isRequired
+}
 
-function App({ children, routes }) {
-  function generateMapMenu() {
-    let path = '';
+const App = ({ children, routes }) => {
+  function generateMapMenu () {
+    let path = ''
 
-    function nextPath(route) {
+    function nextPath (route) {
       path += (
         (path.slice(-1) === '/' ? '' : '/') +
         (route.path === '/' ? '' : route.path)
-      );
-      return path;
+      )
+      return path
     }
 
     return (
@@ -32,9 +31,8 @@ function App({ children, routes }) {
             {(index + 1) < array.length && ' / '}
           </span>
         ))
-    );
+    )
   }
-
 
   return (
     <div style={s.root}>
@@ -62,9 +60,9 @@ function App({ children, routes }) {
         </Interactive>
       </div>
     </div>
-  );
+  )
 }
 
-App.propTypes = propTypes;
+App.propTypes = propTypes
 
-export default App;
+export default App
