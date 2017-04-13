@@ -8,6 +8,8 @@ import About from './components/About'
 import Faq from './components/Faq'
 import PageNotFound from './components/PageNotFound'
 
+import './styles/global.scss'
+
 render(
   <Router history={browserHistory}>
     <Route component={App}>

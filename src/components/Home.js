@@ -1,10 +1,9 @@
 import React from 'react'
-import s from '../styles/home.style'
 
 const Home = () => {
   return (
     <div>
-      <p style={s.p}>
+      <p>
         This is an example page. Refresh the page or copy/paste the url to
         test out the redirect functionality (this same page should load
         after the redirect).

@@ -9,13 +9,31 @@ export default {
   },
 
   module: {
-    loaders: [
-      { test: /\.jsx?$/, exclude: /node_modules/, loader: 'babel' }
+    rules: [
+      {
+        test: /\.jsx?$/,
+        exclude: /node_modules/,
+        use: [{ loader: 'babel-loader' }]
+      },
+      {
+        test: /\.png$/,
+        exclude: /node_modules/,
+        use: [{ loader: 'file-loader' }]
+      },
+      {
+        test: /\.scss$/,
+        exclude: /node_modules/,
+        use: [
+          { loader: 'style-loader' },
+          { loader: 'css-loader' },
+          { loader: 'sass-loader' }
+        ]
+      }
     ]
   },
 
   resolve: {
-    extensions: ['', '.js', '.jsx']
+    modules: ['node_modules']
   },
 
   plugins: process.argv.indexOf('-p') === -1 ? null : [

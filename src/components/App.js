@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Link } from 'react-router'
 import s from '../styles/app.style'
+import QRCode from 'qrcode.react'
 
 const propTypes = {
   children: PropTypes.element.isRequired,
@@ -14,18 +15,23 @@ const buildNavigation = (routes) => (
       <Link to={route.path}>
         {route.mapMenuTitle}
       </Link>
-      {(index + 1) < array.length && ' / '}
     </span>
   ))
 )
 
 const App = ({ children, routes }) => (
-  <div style={s.root}>
-    <h1 style={s.title}>Single Page Apps for GitHub Pages</h1>
-    <nav style={s.mapMenu}>
-      {buildNavigation(routes[0].childRoutes.slice(0, -1))}
-    </nav>
-    {children}
+  <div className='root'>
+    <div className='wrapper' style={s.wrapper}>
+      <h1 className='title'>TipSegWit</h1>
+      <h2 className='subtitle'>Tip miners signaling for segwit</h2>
+      <nav className='map-menu'>
+        {buildNavigation(routes[0].childRoutes.slice(0, -1))}
+      </nav>
+      <div className='qr-wrapper'>
+        <QRCode size={280} value="bitcoin:12A1MyfXbW6RhdRAZEqofac5jCQQjwEPBu?amount=1.2&message=Donation&label=Slush" />
+        {children}
+      </div>
+    </div>
   </div>
 )
 
